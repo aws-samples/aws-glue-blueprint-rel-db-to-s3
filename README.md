@@ -1,10 +1,10 @@
-# Integrate data from Relational Databases into S3 Data Lake
-This blueprint contains  components that can be used  to accelerate deployment of data lake solutions on AWS. The blueprint deploys parameterized AWS Glue components that can be used to pull data from relational databases to the S3 based data lake. 
+# Integrate data from Relational Databases into Amazon S3 Data Lake
+This blueprint contains  components that can be used  to accelerate deployment of data lake solutions on AWS. The blueprint deploys parameterized AWS Glue components that can be used to pull data from relational databases to an Amazon S3 based data lake. 
 
 ## How is this blueprint different from the AWS Lake Formation blueprint?
 This blueprint is different from the AWS Lake Formation blueprint in the following aspects : 
 1. This blupeint gives you the option to leverage either python-shell or pyspark as a source to raw component. The AWS Lake Formation blueprint defaults all components to pyspark. Leveraging a python-shell component helps reduce costs where the amount of data to be processed is not high.
-2. This bluprint not only pulls full or incremental data from the source to the raw layer, but also merges your data from the raw to the curated layer. It does so using a number of parameters supplied to the job. The AWS LakeFormation blueprint simply pulls full or incremental data to the raw layer and does not merge data with the curated layer.
+2. This bluprint not only pulls full or incremental data from the source to the raw layer, but also merges your data from the raw to the curated layer. It does so using a number of parameters supplied to the job. The AWS Lake Formation blueprint simply pulls full or incremental data to the raw layer and does not merge data with the curated layer.
 
 ## Architecture Overview
 The following diagram shows the architecture leveraged by the blueprint.
